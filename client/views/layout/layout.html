@@ -1,0 +1,18 @@
+<!--Used as the base layout template by iron:router for all other templates to use. See /lib/router.js-->
+
+<template name="layout">
+    <header>
+        <!--So this navbar is used for all templates-->
+        {{> navbar}}
+    </header>
+
+    <article>
+        <!--All the different templates have their content inserted here.-->
+        {{> yield}}
+    </article>
+
+    <footer>
+        <!--So this footer is used for all templates-->
+        {{> footer}}
+    </footer>
+</template>

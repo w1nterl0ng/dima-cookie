@@ -1,0 +1,10 @@
+<!--We don't have to worry someone will get to this view because of the iron:router beforeAction, see /lib/router.js-->
+
+<template name="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                {{>sidebar}}
+                {{>dashboardMain}}
+            </div>
+        </div>
+</template>

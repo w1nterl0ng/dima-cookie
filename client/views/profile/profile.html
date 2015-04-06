@@ -1,0 +1,12 @@
+<!--We don't have to worry someone will get to this view because of the iron:router beforeAction, see /lib/router.js-->
+
+<template name='profile'>
+    <div class='container'>
+        <div class="col-md-4 col-md-offset-4">
+            <h3> This is your profile page. Here we show what we know about you.</h3>
+            {{#each currentUser.emails}}
+                {{address}}
+            {{/each}}
+        </div>
+    </div>
+</template>
